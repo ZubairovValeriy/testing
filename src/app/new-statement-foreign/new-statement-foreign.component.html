@@ -1,0 +1,56 @@
+<div class="title">Новое заявление для посторонних</div>
+<form class="form" [formGroup]="statementForm">
+  <div class="column">
+    <div class="form__item">
+      <div class="form__item_label">Имя</div>
+      <input type="text" class="form__item_input" formControlName="firstName">
+    </div>
+
+    <div class="form__item">
+      <div class="form__item_label">Фамилия</div>
+      <input type="text" class="form__item_input" formControlName="middleName">
+    </div>
+
+    <div class="form__item">
+      <div class="form__item_label">Отчество</div>
+      <input type="text" class="form__item_input" formControlName="lastName">
+    </div>
+
+    <div class="form__item">
+      <div class="form__item_label">Серия и номер паспорта</div>
+      <input type="text" class="form__item_input" formControlName="passportData">
+    </div>
+
+    <div class="form__item">
+      <div class="form__item_label">Email</div>
+      <input type="text" class="form__item_input" formControlName="email">
+    </div>
+  </div>
+  <div class="column">
+    <div class="form__item">
+      <div class="form__item_label">ФИО заявителя</div>
+      <input type="text" class="form__item_input" formControlName="nameEmployee">
+    </div>
+
+    <div class="form__item">
+      <div class="form__item_label">Должность</div>
+      <input type="text" class="form__item_input" formControlName="position">
+    </div>
+
+    <div class="form__item">
+      <div class="form__item_label">Причина для выдачи</div>
+      <input type="text" class="form__item_input" formControlName="reason">
+    </div>
+
+    <div class="form__item">
+      <div class="form__item_label">Email заявителя</div>
+      <input type="text" class="form__item_input" formControlName="emailEmployee">
+    </div>
+
+
+  </div>
+</form>
+<div class="buttons">
+  <button class="button button__save">Сохранить</button>
+  <button class="button button__send" type="submit">Отправить</button>
+</div>

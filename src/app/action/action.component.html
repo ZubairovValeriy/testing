@@ -1,0 +1,16 @@
+<div class="title">
+  Добро пожаловать на сайт службы пропусков МГТУ им. Н. Э. Баумана.
+  Здесь вы сможете заказать пропуск взамен утерянного/истекшего и отследить состояние заявления
+</div>
+
+<div class="buttons">
+  <div class="column">
+    <button class="button__action" routerLink="/newStatementEmployee">Заказать сотруднику</button>
+    <button class="button__action" routerLink="/newStatementStudent">Заказать студенту</button>
+    <button class="button__action" routerLink="/newStatementForeign">Заказать постороннему</button>
+  </div>
+  <div class="column">
+    <button class="button__action" (click)="checkStatus()">Проверить статус</button>
+    <button class="button__action" (click)="continueStatement()">Продолжить заполнение</button>
+  </div>
+</div>

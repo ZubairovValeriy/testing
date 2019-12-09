@@ -1,0 +1,31 @@
+.title {
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 30px;
+  font-size: 30px;
+}
+
+.statement__info {
+  margin-top: 60px;
+  margin-left: 50px;
+}
+
+.statement__info__item {
+  margin-top: 25px;
+}
+
+.info__label {
+  font-size: 24px;
+  color: #4f4f4f;
+}
+
+.info__value {
+  margin-left: 20px;
+  margin-top: 10px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.status {
+  color: #27AE60;
+}

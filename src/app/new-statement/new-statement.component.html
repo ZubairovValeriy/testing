@@ -1,0 +1,65 @@
+<div class="title">Новое заявление для студента</div>
+<form class="form" [formGroup]="statementForm">
+  <div class="column">
+    <div class="form__item">
+      <div class="form__item_label">Имя</div>
+      <input type="text" class="form__item_input" formControlName="firstName">
+    </div>
+
+    <div class="form__item">
+      <div class="form__item_label">Фамилия</div>
+      <input type="text" class="form__item_input" formControlName="middleName">
+    </div>
+
+    <div class="form__item">
+      <div class="form__item_label">Отчество</div>
+      <input type="text" class="form__item_input" formControlName="lastName">
+    </div>
+
+    <div class="form__item">
+      <div class="form__item_label">Номер студенческого билета</div>
+      <input type="text" class="form__item_input" formControlName="studentCardNumber">
+    </div>
+
+    <div class="form__item">
+      <div class="form__item_label">Учебная группа</div>
+      <input type="text" class="form__item_input" formControlName="groupIndex">
+    </div>
+  </div>
+  <div class="column">
+    <div class="double">
+      <div class="form__item">
+        <div class="form__item_label">Год поступления</div>
+        <input type="text" class="form__item_input" formControlName="beginDate">
+      </div>
+      <div class="form__item">
+        <div class="form__item_label">Год окончания</div>
+        <input type="text" class="form__item_input" formControlName="endDate">
+      </div>
+    </div>
+
+    <div class="form__item">
+      <div class="form__item_label">Выберите фотографию</div>
+      <input class="form__item_input" type="file" formControlName="photoFile" (change)="emitFiles($event.target.files)">
+    </div>
+
+    <div class="form__item">
+      <div class="form__item_label">Номер телефона</div>
+      <input type="text" class="form__item_input" formControlName="phoneNumber">
+    </div>
+
+    <div class="form__item">
+      <div class="form__item_label">Email</div>
+      <input type="text" class="form__item_input" formControlName="email">
+    </div>
+
+    <div class="form__item">
+      <div class="form__item_label">Причина потери</div>
+      <input type="text" class="form__item_input" formControlName="reason">
+    </div>
+  </div>
+</form>
+<div class="buttons">
+  <button class="button button__save" (click)="saveStatement()">Сохранить</button>
+  <button class="button button__send" type="submit" (click)="sendStatement()">Отправить</button>
+</div>

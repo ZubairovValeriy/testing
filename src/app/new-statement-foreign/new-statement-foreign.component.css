@@ -1,0 +1,68 @@
+.title {
+  margin-top: 25px;
+  font-size: 36px;
+  font-weight: bold;
+}
+.form {
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10%;
+}
+
+.form__item {
+  margin-top: 15px;
+}
+
+.form__item_label {
+  font-weight: bold;
+  font-size: 14px;
+  color: #828282;
+}
+
+.form__item_input {
+  margin-top: 5px;
+  width: 100%;
+  border-radius: 10px;
+  padding: 5px 10px 5px 10px;
+  border: none;
+  font-size: 18px;
+  line-height: 30px;
+  height: 30px;
+}
+
+.double {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10%;
+}
+
+.buttons {
+  width: 50%;
+  margin-left: 50%;
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.button {
+  width: 160px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 10px;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 24px;
+  border: none;
+  box-shadow: rgba(0,0,0,0.35) 3px 3px 5px;
+}
+
+.button__save {
+  background-color: #F2C94C;
+}
+
+.button__send {
+  background-color: #6FCF97;
+}
