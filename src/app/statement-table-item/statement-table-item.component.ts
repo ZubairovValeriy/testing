@@ -8,7 +8,9 @@ import {Component, Input, OnInit} from '@angular/core';
 
 export class StatementTableItemComponent implements OnInit {
   @Input() statement;
-  constructor() { }
+
+  constructor() {
+  }
 
   ngOnInit() {
   }

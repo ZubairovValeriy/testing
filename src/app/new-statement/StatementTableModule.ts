@@ -1,58 +1,68 @@
 import {AngularFireDatabase} from '@angular/fire/database';
 import {AngularFireStorage} from '@angular/fire/storage';
-import {finalize} from 'rxjs/operators';
+import {StatementStudentMapper} from './StatementMapper';
 
 export class StatementTableModule {
-  url;
-  constructor(private db: AngularFireDatabase, private storage: AngularFireStorage) {
-  }
-  insert(data) {
-    const file = data.photo;
-    const filePath = 'images/' + data.id;
-    const ref = this.storage.ref(filePath);
-    const task = ref.put(file);
+  statements = [];
 
-    this.db.object(`statements/${data.id}`).set(
-      {
-        id: data.id,
-        status: data.status,
-        firstName: data.firstName,
-        middleName: data.middleName,
-        lastName: data.lastName,
-        photo: data.photo,
-        email: data.email,
-        phoneNumber: data.phoneNumber,
-        reason: data.reason,
-        groupIndex: data.groupIndex,
-        studentCardNumber: data.studentCardNumber,
-        beginGradDate: data.beginGradDate,
-        endGradeDate: data.endGradeDate
-      }
+  studentMapper: StatementStudentMapper;
+
+  constructor(private db: AngularFireDatabase, private storage: AngularFireStorage) {
+    this.studentMapper = new StatementStudentMapper(db, storage);
+  }
+
+  addToDB(id) {
+    const statement = this.getStatement(id);
+    this.studentMapper.insert(statement);
+  }
+
+  async getStatementByID(id) {
+    const statement = this.studentMapper.getStatementById(id);
+    return statement;
+  }
+
+  deleteFromStatements(id) {
+    const statement = this.getStatement(id);
+    this.statements.splice(this.statements.indexOf(statement), 1);
+  }
+
+  addRejectReason(id, reason) {
+    const statement = this.getStatement(id);
+    statement.rejectReason = reason;
+    statement.status = 4;
+  }
+
+  changeStatement(id, value) {
+    const statement = this.getStatement(id);
+    statement.firstName = value.firstName;
+    statement.middleName = value.middleName;
+    statement.lastName = value.lastName;
+    statement.beginGradDate = value.beginDate;
+    statement.endGradeDate = value.endDate;
+    statement.studentCardNumber = value.studentCardNumber;
+    statement.photo = value.photoFile;
+    statement.groupIndex = value.groupIndex;
+    statement.reason = value.reason;
+    statement.email = value.email;
+  }
+
+  getStatement(id) {
+    return this.statements.find(element =>
+      element.id === id
     );
   }
 
-  getStatementByID(id) {
-    const ref = this.db.database.ref(`statements`).child(`${id}`);
-    ref.once('value')
-        .then(  (snapshot) => {
-          return snapshot.val();
-          console.log('ХУЙ');
-        })
-        .catch(error => error);
-}
-  getResolvedStatements() {
-
+  getStatements() {
+    return this.studentMapper.getSentStatements();
   }
 
-  getRejectedStatements() {
-
+  changeStatus(id, status) {
+    const statement = this.getStatement(id);
+    statement.status = status;
   }
 
-  getUnwatchedStatements() {
-    return this.db.list('statements').valueChanges();
-  }
-
-  changeStatus() {
-
+  updateDB(id) {
+    const statement = this.getStatement(id);
+    this.studentMapper.update(statement);
   }
 }

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {Router} from '@angular/router';
 
 @Component({
@@ -6,11 +6,9 @@ import {Router} from '@angular/router';
   templateUrl: './employee.component.html',
   styleUrls: ['./employee.component.css']
 })
-export class EmployeeComponent implements OnInit {
+export class EmployeeComponent {
 
-  constructor(private router: Router) { }
-
-  ngOnInit() {
+  constructor(private router: Router) {
   }
 
   openStatements() {

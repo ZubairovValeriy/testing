@@ -9,13 +9,14 @@
   </div>
 
   <app-statement-table-item class="table__row"
-                            *ngFor="let statement of statements | async"
+                            *ngFor="let statement of statements"
                             [statement]="statement"
                             (click)="openStatement(statement)">
   </app-statement-table-item>
 </div>
 <div class="popup" [class.hidden]="isStatementHidden">
   <div class="popup__title">Заявление</div>
+  <div class="stID">{{id}}</div>
   <div class="statement">
     <div class="statement__info">
       <div class="statement__item">
@@ -49,17 +50,17 @@
   </div>
   <div class="buttons">
     <div class="button button__reject" (click)="reject()">Отказать</div>
-    <div class="button button__resolve">Одобрить</div>
+    <div class="button button__resolve" (click)="resolveStatement()">Одобрить</div>
   </div>
 </div>
-<div class="popup statement__reject" [class.hidden]="isStatementRejectHidden">
+<form class="popup statement__reject" [class.hidden]="isStatementRejectHidden" [formGroup]="rejectForm">
   <div class="popup__title">Отказ по заявлению</div>
   <div class="statement__reason">
     <div class="statement__title">Укажите причину отказа:</div>
 
     <div class="statement__title">Комментарий:</div>
-    <textarea name="text" id="" class="textarea"></textarea>
+    <textarea name="text" id="" class="textarea" formControlName="reason"></textarea>
   </div>
-  <div class="button button__reason__resolve">Отправить</div>
-</div>
+  <div class="button button__reason__resolve" (click)="rejectStatement()">Отправить</div>
+</form>
 

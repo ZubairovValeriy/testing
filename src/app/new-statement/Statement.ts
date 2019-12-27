@@ -5,14 +5,16 @@ export class Statement {
   firstName: string;
   middleName: string;
   lastName: string;
-  photo: File;
+  photo?: File;
   email: string;
   phoneNumber: string;
   reason: string;
   status: number;
+  rejectReason: string;
 
   constructor(firstName: string, middleName: string, lastName: string, photo: File,
-              email: string, phoneNumber: string, reason: string, status: number, id?: string, ) {
+              email: string, phoneNumber: string, reason: string, status: number,
+              id?: string, rejectReason: string = '') {
     if (!id) {
       this.id = v4();
     } else {
@@ -26,6 +28,7 @@ export class Statement {
     this.phoneNumber = phoneNumber;
     this.reason = reason;
     this.status = status;
+    this.rejectReason = rejectReason;
   }
 }
 

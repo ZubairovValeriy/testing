@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JavaScript-modules-diagram</ID>
+  <OriginalElement>/Users/admin/Documents/TRPO-NEW/src/app</OriginalElement>
+  <nodes>
+    <node x="1904.0" y="931.0">/Users/admin/Documents/TRPO-NEW/src/app/new-statement/Statement.ts#StatementStudent#1297;;</node>
+    <node x="2075.0" y="1194.0">;;;/Users/admin/Documents/TRPO-NEW/src/app/new-statement/StatementMapper.ts#StatementStudentMapper#165;</node>
+    <node x="1785.0" y="1351.0">;;;/Users/admin/Documents/TRPO-NEW/src/app/new-statement/StatementTableModule.ts#StatementTableModule#177;</node>
+    <node x="1358.0" y="1982.0">/Users/admin/Documents/TRPO-NEW/src/app/User.ts#User#0;</node>
+    <node x="1872.0" y="1508.0">;;;/Users/admin/Documents/TRPO-NEW/src/app/UserMapper.ts#UserMapper#53;</node>
+    <node x="2014.0" y="1751.0">;;;;;/Users/admin/Documents/TRPO-NEW/src/app/UserTableModule.ts#UserTableModule#94;</node>
+    <node x="777.0" y="463.0">/Users/admin/Documents/TRPO-NEW/src/app/action/action.component.ts#ActionComponent#116;;;;;;</node>
+    <node x="1308.0" y="1534.0">;;;/Users/admin/Documents/TRPO-NEW/src/app/app.component.ts#AppComponent#673;;;;;;;;;;;</node>
+    <node x="584.0" y="727.0">;;;;;;;;;;;;;;;;;;;;;;</node>
+    <node x="257.0" y="1212.0">/Users/admin/Documents/TRPO-NEW/node_modules/@angular/fire/auth-guard/auth-guard.d.ts#AngularFireAuthGuard#468;</node>
+    <node x="1693.0" y="1940.0">/Users/admin/Documents/TRPO-NEW/node_modules/@angular/fire/auth/auth.d.ts#AngularFireAuth#232;</node>
+    <node x="471.0" y="1476.0">/Users/admin/Documents/TRPO-NEW/node_modules/@angular/fire/auth/auth.module.d.ts#AngularFireAuthModule#24;</node>
+    <node x="1504.0" y="422.0">/Users/admin/Documents/TRPO-NEW/src/app/check-statement/check-statement.component.ts#CheckStatementComponent#190;;;;;</node>
+    <node x="8.0" y="672.0">/Users/admin/Documents/TRPO-NEW/node_modules/@angular/common/common.d.ts#CommonModule#3366;</node>
+    <node x="1646.0" y="1241.0">/Users/admin/Documents/TRPO-NEW/node_modules/@angular/fire/database/database.d.ts#AngularFireDatabase#261;</node>
+    <node x="479.0" y="51.0">/Users/admin/Documents/TRPO-NEW/node_modules/@angular/fire/database/database.module.d.ts#AngularFireDatabaseModule#28;</node>
+    <node x="880.0" y="934.0">;;;/Users/admin/Documents/TRPO-NEW/src/app/employee-statements/employee-statements.component.ts#EmployeeStatementsComponent#427;;;;;;;</node>
+    <node x="1226.0" y="770.0">;/Users/admin/Documents/TRPO-NEW/src/app/employee/employee.component.ts#EmployeeComponent#90;;;</node>
+    <node x="0.0" y="1066.0">/Users/admin/Documents/TRPO-NEW/src/environments/environment.ts#environment#347;</node>
+    <node x="1537.0" y="886.0">/Users/admin/Documents/TRPO-NEW/src/app/find-statement-service.service.ts#FindStatementServiceService#103;;;</node>
+    <node x="877.0" y="0.0">/Users/admin/Documents/TRPO-NEW/node_modules/@angular/fire/firebase.app.module.d.ts#AngularFireModule#1365;</node>
+    <node x="1375.0" y="1056.0">/Users/admin/Documents/TRPO-NEW/node_modules/@angular/forms/forms.d.ts#FormBuilder#53005;/Users/admin/Documents/TRPO-NEW/node_modules/@angular/forms/forms.d.ts#FormsModule#91617;/Users/admin/Documents/TRPO-NEW/node_modules/@angular/forms/forms.d.ts#ReactiveFormsModule#123420;/Users/admin/Documents/TRPO-NEW/node_modules/@angular/forms/forms.d.ts#Validators#133399;</node>
+    <node x="2080.0" y="665.0">v4;</node>
+    <node x="1248.0" y="630.0">;/Users/admin/Documents/TRPO-NEW/src/app/managing-popups.service.ts#ManagingPopupsService#43;</node>
+    <node x="658.0" y="238.0">;/Users/admin/Documents/TRPO-NEW/src/app/mask/mask.component.ts#MaskComponent#50;;</node>
+    <node x="1150.0" y="1223.0">;;;;;;/Users/admin/Documents/TRPO-NEW/src/app/new-statement/new-statement.component.ts#NewStatementComponent#476;;;;;</node>
+    <node x="203.0" y="303.0">/Users/admin/Documents/TRPO-NEW/node_modules/@angular/platform-browser/platform-browser.d.ts#BrowserModule#1343;</node>
+    <node x="887.0" y="1415.0">/Users/admin/Documents/TRPO-NEW/node_modules/@angular/router/router.d.ts#Router#54855;/Users/admin/Documents/TRPO-NEW/node_modules/@angular/router/router.d.ts#RouterModule#73553;/Users/admin/Documents/TRPO-NEW/node_modules/@angular/router/router.d.ts#Routes#81188;</node>
+    <node x="274.0" y="570.0">;;;/Users/admin/Documents/TRPO-NEW/src/app/statement-table-item/statement-table-item.component.ts#StatementTableItemComponent#57;</node>
+    <node x="1579.0" y="1634.0">/Users/admin/Documents/TRPO-NEW/node_modules/@angular/fire/storage/storage.d.ts#AngularFireStorage#372;</node>
+    <node x="1108.0" y="269.0">/Users/admin/Documents/TRPO-NEW/node_modules/@angular/fire/storage/storage.module.d.ts#AngularFireStorageModule#27;</node>
+    <node x="1007.0" y="1885.0">StatementStatesService;</node>
+    <node x="2084.4470686808736" y="99.42424209387946">Component;EventEmitter;Injectable;Input;NgModule;OnInit;Output;</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source=";;;;;;;;;;;;;;;;;;;;;;" target="/Users/admin/Documents/TRPO-NEW/src/environments/environment.ts#environment#347;">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source=";;;/Users/admin/Documents/TRPO-NEW/src/app/statement-table-item/statement-table-item.component.ts#StatementTableItemComponent#57;" target="Component;EventEmitter;Injectable;Input;NgModule;OnInit;Output;">
+      <point x="37.41867414214744" y="0.0" />
+      <point x="0.0" y="-10.377445628755595" />
+    </edge>
+    <edge source=";;;/Users/admin/Documents/TRPO-NEW/src/app/employee-statements/employee-statements.component.ts#EmployeeStatementsComponent#427;;;;;;;" target="/Users/admin/Documents/TRPO-NEW/node_modules/@angular/forms/forms.d.ts#FormBuilder#53005;/Users/admin/Documents/TRPO-NEW/node_modules/@angular/forms/forms.d.ts#FormsModule#91617;/Users/admin/Documents/TRPO-NEW/node_modules/@angular/forms/forms.d.ts#ReactiveFormsModule#123420;/Users/admin/Documents/TRPO-NEW/node_modules/@angular/forms/forms.d.ts#Validators#133399;">
+      <point x="0.0" y="5.054285821661509" />
+      <point x="0.0" y="5.054285821661487" />
+    </edge>
+    <edge source=";;;;;;/Users/admin/Documents/TRPO-NEW/src/app/new-statement/new-statement.component.ts#NewStatementComponent#476;;;;;" target="/Users/admin/Documents/TRPO-NEW/node_modules/@angular/fire/database/database.d.ts#AngularFireDatabase#261;">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source=";;;;;;;;;;;;;;;;;;;;;;" target="/Users/admin/Documents/TRPO-NEW/node_modules/@angular/fire/database/database.module.d.ts#AngularFireDatabaseModule#28;">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source=";;;;;;/Users/admin/Documents/TRPO-NEW/src/app/new-statement/new-statement.component.ts#NewStatementComponent#476;;;;;" target="/Users/admin/Documents/TRPO-NEW/node_modules/@angular/forms/forms.d.ts#FormBuilder#53005;/Users/admin/Documents/TRPO-NEW/node_modules/@angular/forms/forms.d.ts#FormsModule#91617;/Users/admin/Documents/TRPO-NEW/node_modules/@angular/forms/forms.d.ts#ReactiveFormsModule#123420;/Users/admin/Documents/TRPO-NEW/node_modules/@angular/forms/forms.d.ts#Validators#133399;">
+      <point x="-4.204772203476242" y="-2.7055296555154484" />
+      <point x="-4.204772203476239" y="-2.7055296555154484" />
+    </edge>
+    <edge source=";;;/Users/admin/Documents/TRPO-NEW/src/app/UserMapper.ts#UserMapper#53;" target="/Users/admin/Documents/TRPO-NEW/node_modules/@angular/fire/database/database.d.ts#AngularFireDatabase#261;">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source=";;;;;;;;;;;;;;;;;;;;;;" target="/Users/admin/Documents/TRPO-NEW/node_modules/@angular/platform-browser/platform-browser.d.ts#BrowserModule#1343;">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source=";;;/Users/admin/Documents/TRPO-NEW/src/app/app.component.ts#AppComponent#673;;;;;;;;;;;" target="StatementStatesService;">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source=";;;/Users/admin/Documents/TRPO-NEW/src/app/employee-statements/employee-statements.component.ts#EmployeeStatementsComponent#427;;;;;;;" target=";;;/Users/admin/Documents/TRPO-NEW/src/app/new-statement/StatementTableModule.ts#StatementTableModule#177;">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source=";;;;;;;;;;;;;;;;;;;;;;" target=";/Users/admin/Documents/TRPO-NEW/src/app/mask/mask.component.ts#MaskComponent#50;;">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source=";;;/Users/admin/Documents/TRPO-NEW/src/app/UserMapper.ts#UserMapper#53;" target="/Users/admin/Documents/TRPO-NEW/node_modules/@angular/fire/storage/storage.d.ts#AngularFireStorage#372;">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source=";;;/Users/admin/Documents/TRPO-NEW/src/app/app.component.ts#AppComponent#673;;;;;;;;;;;" target="/Users/admin/Documents/TRPO-NEW/node_modules/@angular/fire/auth/auth.d.ts#AngularFireAuth#232;">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source=";;;;;;;;;;;;;;;;;;;;;;" target=";/Users/admin/Documents/TRPO-NEW/src/app/managing-popups.service.ts#ManagingPopupsService#43;">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source=";;;;;/Users/admin/Documents/TRPO-NEW/src/app/UserTableModule.ts#UserTableModule#94;" target=";;;/Users/admin/Documents/TRPO-NEW/src/app/UserMapper.ts#UserMapper#53;">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source=";;;/Users/admin/Documents/TRPO-NEW/src/app/new-statement/StatementMapper.ts#StatementStudentMapper#165;" target="/Users/admin/Documents/TRPO-NEW/src/app/new-statement/Statement.ts#StatementStudent#1297;;">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source=";;;/Users/admin/Documents/TRPO-NEW/src/app/UserMapper.ts#UserMapper#53;" target="/Users/admin/Documents/TRPO-NEW/node_modules/@angular/fire/auth/auth.d.ts#AngularFireAuth#232;">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="/Users/admin/Documents/TRPO-NEW/src/app/check-statement/check-statement.component.ts#CheckStatementComponent#190;;;;;" target="Component;EventEmitter;Injectable;Input;NgModule;OnInit;Output;">
+      <point x="-11.818009866171906" y="0.0" />
+      <point x="0.0" y="-5.518210184523355" />
+    </edge>
+    <edge source=";/Users/admin/Documents/TRPO-NEW/src/app/mask/mask.component.ts#MaskComponent#50;;" target="Component;EventEmitter;Injectable;Input;NgModule;OnInit;Output;">
+      <point x="-5.867871414070692" y="0.0" />
+      <point x="-5.867871414070692" y="0.0" />
+    </edge>
+    <edge source=";;;;;;;;;;;;;;;;;;;;;;" target="/Users/admin/Documents/TRPO-NEW/node_modules/@angular/fire/storage/storage.module.d.ts#AngularFireStorageModule#27;">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source=";;;/Users/admin/Documents/TRPO-NEW/src/app/employee-statements/employee-statements.component.ts#EmployeeStatementsComponent#427;;;;;;;" target="/Users/admin/Documents/TRPO-NEW/src/app/new-statement/Statement.ts#StatementStudent#1297;;">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source=";;;/Users/admin/Documents/TRPO-NEW/src/app/app.component.ts#AppComponent#673;;;;;;;;;;;" target="/Users/admin/Documents/TRPO-NEW/node_modules/@angular/fire/storage/storage.d.ts#AngularFireStorage#372;">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source=";;;;;;;;;;;;;;;;;;;;;;" target=";;;/Users/admin/Documents/TRPO-NEW/src/app/app.component.ts#AppComponent#673;;;;;;;;;;;">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source=";;;/Users/admin/Documents/TRPO-NEW/src/app/app.component.ts#AppComponent#673;;;;;;;;;;;" target=";;;/Users/admin/Documents/TRPO-NEW/src/app/new-statement/StatementTableModule.ts#StatementTableModule#177;">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="/Users/admin/Documents/TRPO-NEW/src/app/check-statement/check-statement.component.ts#CheckStatementComponent#190;;;;;" target="/Users/admin/Documents/TRPO-NEW/src/app/new-statement/Statement.ts#StatementStudent#1297;;">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="/Users/admin/Documents/TRPO-NEW/src/app/new-statement/Statement.ts#StatementStudent#1297;;" target="v4;">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source=";;;;;;/Users/admin/Documents/TRPO-NEW/src/app/new-statement/new-statement.component.ts#NewStatementComponent#476;;;;;" target="/Users/admin/Documents/TRPO-NEW/node_modules/@angular/fire/storage/storage.d.ts#AngularFireStorage#372;">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source=";;;;;/Users/admin/Documents/TRPO-NEW/src/app/UserTableModule.ts#UserTableModule#94;" target="/Users/admin/Documents/TRPO-NEW/node_modules/@angular/fire/storage/storage.d.ts#AngularFireStorage#372;">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source=";;;/Users/admin/Documents/TRPO-NEW/src/app/employee-statements/employee-statements.component.ts#EmployeeStatementsComponent#427;;;;;;;" target="/Users/admin/Documents/TRPO-NEW/node_modules/@angular/fire/database/database.d.ts#AngularFireDatabase#261;">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source=";;;;;;;;;;;;;;;;;;;;;;" target="/Users/admin/Documents/TRPO-NEW/node_modules/@angular/fire/auth-guard/auth-guard.d.ts#AngularFireAuthGuard#468;">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source=";;;;;;;;;;;;;;;;;;;;;;" target=";;;/Users/admin/Documents/TRPO-NEW/src/app/employee-statements/employee-statements.component.ts#EmployeeStatementsComponent#427;;;;;;;">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source=";;;/Users/admin/Documents/TRPO-NEW/src/app/employee-statements/employee-statements.component.ts#EmployeeStatementsComponent#427;;;;;;;" target="Component;EventEmitter;Injectable;Input;NgModule;OnInit;Output;">
+      <point x="5.041791157893414" y="0.0" />
+      <point x="5.041791157893442" y="0.0" />
+    </edge>
+    <edge source=";;;/Users/admin/Documents/TRPO-NEW/src/app/new-statement/StatementMapper.ts#StatementStudentMapper#165;" target="/Users/admin/Documents/TRPO-NEW/node_modules/@angular/fire/database/database.d.ts#AngularFireDatabase#261;">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="/Users/admin/Documents/TRPO-NEW/src/app/action/action.component.ts#ActionComponent#116;;;;;;" target="Component;EventEmitter;Injectable;Input;NgModule;OnInit;Output;">
+      <point x="-6.136775505238347" y="0.0" />
+      <point x="0.0" y="8.623690360130865" />
+    </edge>
+    <edge source=";;;;;;/Users/admin/Documents/TRPO-NEW/src/app/new-statement/new-statement.component.ts#NewStatementComponent#476;;;;;" target="Component;EventEmitter;Injectable;Input;NgModule;OnInit;Output;">
+      <point x="-4.56198381523815" y="2.0465345512610043" />
+      <point x="-4.561983815238136" y="2.0465345512610043" />
+    </edge>
+    <edge source=";;;;;;;;;;;;;;;;;;;;;;" target=";/Users/admin/Documents/TRPO-NEW/src/app/employee/employee.component.ts#EmployeeComponent#90;;;">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source=";;;;;/Users/admin/Documents/TRPO-NEW/src/app/UserTableModule.ts#UserTableModule#94;" target="/Users/admin/Documents/TRPO-NEW/node_modules/@angular/fire/database/database.d.ts#AngularFireDatabase#261;">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source=";;;/Users/admin/Documents/TRPO-NEW/src/app/new-statement/StatementMapper.ts#StatementStudentMapper#165;" target="/Users/admin/Documents/TRPO-NEW/node_modules/@angular/fire/storage/storage.d.ts#AngularFireStorage#372;">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source=";;;/Users/admin/Documents/TRPO-NEW/src/app/app.component.ts#AppComponent#673;;;;;;;;;;;" target=";/Users/admin/Documents/TRPO-NEW/src/app/managing-popups.service.ts#ManagingPopupsService#43;">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source=";;;;;;;;;;;;;;;;;;;;;;" target="/Users/admin/Documents/TRPO-NEW/node_modules/@angular/common/common.d.ts#CommonModule#3366;">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source=";;;;;;/Users/admin/Documents/TRPO-NEW/src/app/new-statement/new-statement.component.ts#NewStatementComponent#476;;;;;" target=";/Users/admin/Documents/TRPO-NEW/src/app/managing-popups.service.ts#ManagingPopupsService#43;">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source=";;;;;;/Users/admin/Documents/TRPO-NEW/src/app/new-statement/new-statement.component.ts#NewStatementComponent#476;;;;;" target="/Users/admin/Documents/TRPO-NEW/src/app/find-statement-service.service.ts#FindStatementServiceService#103;;;">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source=";;;;;;;;;;;;;;;;;;;;;;" target="/Users/admin/Documents/TRPO-NEW/node_modules/@angular/router/router.d.ts#Router#54855;/Users/admin/Documents/TRPO-NEW/node_modules/@angular/router/router.d.ts#RouterModule#73553;/Users/admin/Documents/TRPO-NEW/node_modules/@angular/router/router.d.ts#Routes#81188;">
+      <point x="4.291017495306505" y="-2.566548042599834" />
+      <point x="4.291017495306562" y="-2.566548042599834" />
+    </edge>
+    <edge source=";;;/Users/admin/Documents/TRPO-NEW/src/app/app.component.ts#AppComponent#673;;;;;;;;;;;" target="/Users/admin/Documents/TRPO-NEW/src/app/find-statement-service.service.ts#FindStatementServiceService#103;;;">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source=";;;;;;;;;;;;;;;;;;;;;;" target="/Users/admin/Documents/TRPO-NEW/node_modules/@angular/fire/firebase.app.module.d.ts#AngularFireModule#1365;">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source=";;;/Users/admin/Documents/TRPO-NEW/src/app/app.component.ts#AppComponent#673;;;;;;;;;;;" target=";;;;;/Users/admin/Documents/TRPO-NEW/src/app/UserTableModule.ts#UserTableModule#94;">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source=";;;/Users/admin/Documents/TRPO-NEW/src/app/new-statement/StatementTableModule.ts#StatementTableModule#177;" target="/Users/admin/Documents/TRPO-NEW/node_modules/@angular/fire/database/database.d.ts#AngularFireDatabase#261;">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source=";;;/Users/admin/Documents/TRPO-NEW/src/app/app.component.ts#AppComponent#673;;;;;;;;;;;" target="Component;EventEmitter;Injectable;Input;NgModule;OnInit;Output;">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source=";;;;;;;;;;;;;;;;;;;;;;" target=";;;/Users/admin/Documents/TRPO-NEW/src/app/statement-table-item/statement-table-item.component.ts#StatementTableItemComponent#57;">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source=";;;/Users/admin/Documents/TRPO-NEW/src/app/new-statement/StatementTableModule.ts#StatementTableModule#177;" target="/Users/admin/Documents/TRPO-NEW/node_modules/@angular/fire/storage/storage.d.ts#AngularFireStorage#372;">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source=";;;/Users/admin/Documents/TRPO-NEW/src/app/employee-statements/employee-statements.component.ts#EmployeeStatementsComponent#427;;;;;;;" target=";/Users/admin/Documents/TRPO-NEW/src/app/managing-popups.service.ts#ManagingPopupsService#43;">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source=";;;;;/Users/admin/Documents/TRPO-NEW/src/app/UserTableModule.ts#UserTableModule#94;" target=";;;/Users/admin/Documents/TRPO-NEW/src/app/new-statement/StatementMapper.ts#StatementStudentMapper#165;">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source=";/Users/admin/Documents/TRPO-NEW/src/app/employee/employee.component.ts#EmployeeComponent#90;;;" target="Component;EventEmitter;Injectable;Input;NgModule;OnInit;Output;">
+      <point x="0.0" y="-5.055873944217581" />
+      <point x="0.0" y="-5.0558739442176375" />
+    </edge>
+    <edge source=";;;;;;;;;;;;;;;;;;;;;;" target="/Users/admin/Documents/TRPO-NEW/src/app/action/action.component.ts#ActionComponent#116;;;;;;">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="/Users/admin/Documents/TRPO-NEW/src/app/action/action.component.ts#ActionComponent#116;;;;;;" target=";/Users/admin/Documents/TRPO-NEW/src/app/managing-popups.service.ts#ManagingPopupsService#43;">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source=";;;/Users/admin/Documents/TRPO-NEW/src/app/app.component.ts#AppComponent#673;;;;;;;;;;;" target="/Users/admin/Documents/TRPO-NEW/node_modules/@angular/fire/database/database.d.ts#AngularFireDatabase#261;">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="/Users/admin/Documents/TRPO-NEW/src/app/check-statement/check-statement.component.ts#CheckStatementComponent#190;;;;;" target="/Users/admin/Documents/TRPO-NEW/src/app/find-statement-service.service.ts#FindStatementServiceService#103;;;">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="/Users/admin/Documents/TRPO-NEW/src/app/find-statement-service.service.ts#FindStatementServiceService#103;;;" target="Component;EventEmitter;Injectable;Input;NgModule;OnInit;Output;">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source=";;;/Users/admin/Documents/TRPO-NEW/src/app/app.component.ts#AppComponent#673;;;;;;;;;;;" target="/Users/admin/Documents/TRPO-NEW/src/app/User.ts#User#0;">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source=";;;;;;/Users/admin/Documents/TRPO-NEW/src/app/new-statement/new-statement.component.ts#NewStatementComponent#476;;;;;" target="/Users/admin/Documents/TRPO-NEW/src/app/new-statement/Statement.ts#StatementStudent#1297;;">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source=";;;;;;;;;;;;;;;;;;;;;;" target="/Users/admin/Documents/TRPO-NEW/node_modules/@angular/fire/auth/auth.module.d.ts#AngularFireAuthModule#24;">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source=";;;;;;;;;;;;;;;;;;;;;;" target="Component;EventEmitter;Injectable;Input;NgModule;OnInit;Output;">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source=";;;;;;/Users/admin/Documents/TRPO-NEW/src/app/new-statement/new-statement.component.ts#NewStatementComponent#476;;;;;" target=";;;/Users/admin/Documents/TRPO-NEW/src/app/new-statement/StatementTableModule.ts#StatementTableModule#177;">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source=";;;/Users/admin/Documents/TRPO-NEW/src/app/new-statement/StatementTableModule.ts#StatementTableModule#177;" target=";;;/Users/admin/Documents/TRPO-NEW/src/app/new-statement/StatementMapper.ts#StatementStudentMapper#165;">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source=";;;/Users/admin/Documents/TRPO-NEW/src/app/app.component.ts#AppComponent#673;;;;;;;;;;;" target="/Users/admin/Documents/TRPO-NEW/node_modules/@angular/forms/forms.d.ts#FormBuilder#53005;/Users/admin/Documents/TRPO-NEW/node_modules/@angular/forms/forms.d.ts#FormsModule#91617;/Users/admin/Documents/TRPO-NEW/node_modules/@angular/forms/forms.d.ts#ReactiveFormsModule#123420;/Users/admin/Documents/TRPO-NEW/node_modules/@angular/forms/forms.d.ts#Validators#133399;">
+      <point x="5.025107319509246" y="0.0" />
+      <point x="5.02510731950926" y="0.0" />
+    </edge>
+    <edge source=";;;;;;;;;;;;;;;;;;;;;;" target="/Users/admin/Documents/TRPO-NEW/src/app/check-statement/check-statement.component.ts#CheckStatementComponent#190;;;;;">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source=";/Users/admin/Documents/TRPO-NEW/src/app/managing-popups.service.ts#ManagingPopupsService#43;" target="Component;EventEmitter;Injectable;Input;NgModule;OnInit;Output;">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="/Users/admin/Documents/TRPO-NEW/src/app/find-statement-service.service.ts#FindStatementServiceService#103;;;" target="/Users/admin/Documents/TRPO-NEW/src/app/new-statement/Statement.ts#StatementStudent#1297;;">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source=";;;;;;;;;;;;;;;;;;;;;;" target=";;;;;;/Users/admin/Documents/TRPO-NEW/src/app/new-statement/new-statement.component.ts#NewStatementComponent#476;;;;;">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source=";;;;;/Users/admin/Documents/TRPO-NEW/src/app/UserTableModule.ts#UserTableModule#94;" target="/Users/admin/Documents/TRPO-NEW/node_modules/@angular/fire/auth/auth.d.ts#AngularFireAuth#232;">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source=";;;/Users/admin/Documents/TRPO-NEW/src/app/app.component.ts#AppComponent#673;;;;;;;;;;;" target="/Users/admin/Documents/TRPO-NEW/node_modules/@angular/router/router.d.ts#Router#54855;/Users/admin/Documents/TRPO-NEW/node_modules/@angular/router/router.d.ts#RouterModule#73553;/Users/admin/Documents/TRPO-NEW/node_modules/@angular/router/router.d.ts#Routes#81188;">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source=";;;;;;;;;;;;;;;;;;;;;;" target="/Users/admin/Documents/TRPO-NEW/node_modules/@angular/forms/forms.d.ts#FormBuilder#53005;/Users/admin/Documents/TRPO-NEW/node_modules/@angular/forms/forms.d.ts#FormsModule#91617;/Users/admin/Documents/TRPO-NEW/node_modules/@angular/forms/forms.d.ts#ReactiveFormsModule#123420;/Users/admin/Documents/TRPO-NEW/node_modules/@angular/forms/forms.d.ts#Validators#133399;">
+      <point x="0.0" y="5.0717517177438936" />
+      <point x="0.0" y="5.071751717743872" />
+    </edge>
+    <edge source=";/Users/admin/Documents/TRPO-NEW/src/app/employee/employee.component.ts#EmployeeComponent#90;;;" target="/Users/admin/Documents/TRPO-NEW/node_modules/@angular/router/router.d.ts#Router#54855;/Users/admin/Documents/TRPO-NEW/node_modules/@angular/router/router.d.ts#RouterModule#73553;/Users/admin/Documents/TRPO-NEW/node_modules/@angular/router/router.d.ts#Routes#81188;">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source=";;;/Users/admin/Documents/TRPO-NEW/src/app/employee-statements/employee-statements.component.ts#EmployeeStatementsComponent#427;;;;;;;" target="/Users/admin/Documents/TRPO-NEW/node_modules/@angular/fire/storage/storage.d.ts#AngularFireStorage#372;">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.3961454424777001" x="1132.8816253355046" y="1132.4571614724725" />
+  <SelectedNodes />
+  <Categories>
+    <Category>All</Category>
+  </Categories>
+  <VISIBILITY>Details</VISIBILITY>
+</Diagram>
+

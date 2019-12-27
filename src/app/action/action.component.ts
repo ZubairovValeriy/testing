@@ -1,5 +1,6 @@
-import {Component, EventEmitter, OnInit, Output} from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {ManagingPopupsService} from '../managing-popups.service';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-action',
@@ -8,8 +9,8 @@ import {ManagingPopupsService} from '../managing-popups.service';
 })
 export class ActionComponent implements OnInit {
 
-  constructor(private popupsServise: ManagingPopupsService) {
-}
+  constructor(private popupsServise: ManagingPopupsService, private router: Router) {
+  }
 
   checkStatus() {
     this.popupsServise.checkStatus();
@@ -19,7 +20,7 @@ export class ActionComponent implements OnInit {
     this.popupsServise.continueStatement();
   }
 
-  ngOnInit() {
+  newStatement() {
+    this.router.navigateByUrl('newStatementStudent');
   }
-
 }

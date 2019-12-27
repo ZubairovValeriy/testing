@@ -1,4 +1,4 @@
-import { Injectable } from '@angular/core';
+import {Injectable} from '@angular/core';
 
 @Injectable()
 export class ManagingPopupsService {
@@ -16,7 +16,7 @@ export class ManagingPopupsService {
   get isMaskHidden() {
     return !(!this.isStatementSubmittedHidden || !this.isLoginFormHidden ||
       !this.isFindStatementHidden || !this.isStatementHidden || !this.isStatementRejectReasonHidden
-    || !this.isContinueStatementHidden);
+      || !this.isContinueStatementHidden);
   }
 
   openLoginForm() {
@@ -54,6 +54,7 @@ export class ManagingPopupsService {
     this.isContinueStatementHidden = true;
   }
 
-  constructor() { }
+  constructor() {
+  }
 
 }

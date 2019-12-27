@@ -6,7 +6,7 @@
   <div class="button" (click)="logOut()" *ngIf="afAuth.user | async">Выход</div>
 </header>
 <section class="content">
-  <section class="main__component" >
+  <section class="main__component">
     <router-outlet></router-outlet>
   </section>
   <aside>
@@ -70,7 +70,8 @@
     <div class="quote__title">Ракетный колледж на Яузе</div>
     <div class="quote__text">
       — так иногда называют наш университет.
-      МВТУ — пионер в решении задач авиации, создании ракетной техники, ядерной энергетики и радиоэлектроники</div>
+      МВТУ — пионер в решении задач авиации, создании ракетной техники, ядерной энергетики и радиоэлектроники
+    </div>
   </div>
   <div class="links">
     <div class="socialnetworks">
@@ -103,13 +104,11 @@
 
 <div class="popup" [class.hidden]="isFindStatementHidden">
   <div class="popup__title">Отслеживание заявления</div>
-  <div class="form">
+  <form class="form" [formGroup]="checkStatusForm">
     <div class="label">Ввведите номер заявления</div>
-    <input type="text" class="input">
-    <div class="label">Введите ФИО</div>
-    <input type="text" class="input" type="text">
-    <button class="submit" (click)="findStatement()">Найти</button>
-  </div>
+    <input type="text" class="input" formControlName="statementId">
+    <button class="submit" type="submit" (click)="findStatement()">Найти</button>
+  </form>
 </div>
 
 <div class="popup" [class.hidden]="isContinueStatementHidden">
@@ -124,10 +123,11 @@
 <div class="popup" [class.hidden]="isStatementSubmittedHidden">
   <div class="popup__title">Отправка заявления</div>
   <div class="form">
-    <div class="popup__text">Ваше заявление на выпуск пропуска успешно {{popupsService.status == 1 ? "отправлено" : "сохранено"}}.
+    <div class="popup__text">Ваше заявление на выпуск пропуска
+      успешно {{popupsService.status == 1 ? "отправлено" : "сохранено"}}.
       {{submitText}}</div>
     <div class="popup__number">{{popupsService.statementId}}</div>
-    <button class="submit">Понятно</button>
+    <button class="submit" (click)="closePopup()">Понятно</button>
   </div>
 </div>
 

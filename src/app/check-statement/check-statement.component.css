@@ -26,6 +26,14 @@
   font-weight: bold;
 }
 
-.status {
+.status__resolved {
   color: #27AE60;
+}
+
+.status__rejected {
+  color: #990000;
+}
+
+.status__pending {
+  color: #F2C94C;
 }

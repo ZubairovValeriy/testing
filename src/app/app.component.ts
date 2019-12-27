@@ -1,14 +1,14 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
 import {ManagingPopupsService} from './managing-popups.service';
 import {Router} from '@angular/router';
-import { AngularFireAuth } from '@angular/fire/auth';
-import { auth } from 'firebase/app';
+import {AngularFireAuth} from '@angular/fire/auth';
 import {FormBuilder, Validators} from '@angular/forms';
-import {FirebaseAuth, FirebaseStorage} from '@angular/fire';
-import {StatementMapper} from './new-statement/StatementMapper';
 import {AngularFireDatabase} from '@angular/fire/database';
-import {StatementStatesService} from './statement-states.service';
 import {AngularFireStorage} from '@angular/fire/storage';
+import {StatementTableModule} from './new-statement/StatementTableModule';
+import {FindStatementServiceService} from './find-statement-service.service';
+import {UserTableModule} from './UserTableModule';
+import {User} from './User';
 
 @Component({
   selector: 'app-root',
@@ -18,6 +18,9 @@ import {AngularFireStorage} from '@angular/fire/storage';
 export class AppComponent {
   loginForm;
   continueStatementForm;
+  checkStatusForm;
+  tableModule: StatementTableModule;
+  userTableModule: UserTableModule;
 
   get submitText() {
     if (this.popupsService.status === 1) {
@@ -36,19 +39,12 @@ export class AppComponent {
     return this.popupsService.isLoginFormHidden;
   }
 
-  get isStatementHidden() {
-    return this.popupsService.isStatementHidden;
-  }
-
   get isFindStatementHidden() {
     return this.popupsService.isFindStatementHidden;
   }
 
   get isStatementSubmittedHidden() {
     return this.popupsService.isStatementSubmittedHidden;
-  }
-  get isStatementRejectReasonHidden() {
-    return this.popupsService.isStatementRejectReasonHidden;
   }
 
   get isContinueStatementHidden() {
@@ -59,9 +55,12 @@ export class AppComponent {
               private db: AngularFireDatabase,
               private router: Router,
               private afAuth: AngularFireAuth,
-              private st: StatementStatesService,
               private formBuilder: FormBuilder,
+              private findStatementService: FindStatementServiceService,
               private storage: AngularFireStorage) {
+    this.tableModule = new StatementTableModule(db, storage);
+    this.userTableModule = new UserTableModule(afAuth);
+
     this.loginForm = this.formBuilder.group({
       email: ['', [Validators.required]],
       password: ['', [Validators.required]]
@@ -70,23 +69,22 @@ export class AppComponent {
     this.continueStatementForm = this.formBuilder.group({
       statementId: ['', [Validators.required]]
     });
-  }
 
-  continueStatement() {
-    const statementMapper = new StatementMapper(this.db, this.storage);
-    console.log(statementMapper.getStatementById(this.continueStatementForm.value.statementId));
-    this.popupsService.hidePopups();
-    this.router.navigateByUrl('/newStatementStudent');
+    this.checkStatusForm = this.formBuilder.group({
+      statementId: ['', [Validators.required]]
+    });
   }
 
   logIn() {
-    this.afAuth.auth.signInWithEmailAndPassword('ValeriyIU5-12@yandex.ru', 'qwerty123')
+    const user = new User(this.loginForm.value.email, this.loginForm.value.password);
+
+    this.userTableModule.logIn(user)
       .then(() => {
+        this.userTableModule.user = user;
         this.popupsService.hidePopups();
         this.router.navigateByUrl('/employeeMain');
       })
       .catch((error) => {
-        // Handle Errors here.
         const errorCode = error.code;
         const errorMessage = error.message;
         if (errorCode === 'auth/wrong-password') {
@@ -99,10 +97,13 @@ export class AppComponent {
   }
 
   logOut() {
-    this.afAuth.auth.signOut()
-      .then(() => {
-        this.router.navigateByUrl('/');
-      });
+    this.userTableModule.logOut().then(() => {
+      this.router.navigateByUrl('/');
+    });
+  }
+
+  closePopup() {
+    this.popupsService.hidePopups();
   }
 
 
@@ -112,14 +113,22 @@ export class AppComponent {
 
   findStatement() {
     this.popupsService.hidePopups();
-    this.router.navigateByUrl('/check');
+    this.tableModule.getStatementByID(this.checkStatusForm.value.statementId)
+      .then((snapshot) => {
+        const statement = snapshot.val();
+        if (statement) {
+          this.findStatementService.setStatement(statement);
+          this.router.navigateByUrl('/check');
+        } else {
+          alert('Не нашли');
+        }
+      })
+      .catch(error => console.log(error));
   }
 
   hidePopupsAndMasks() {
     this.popupsService.hidePopups();
   }
-
-
 }
 
 
